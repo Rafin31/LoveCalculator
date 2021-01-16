@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+    
+}
+html{
+    font-size: 55.6%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: rgba(228, 14, 14, 0.808);
+    height: 300px;
+    width: 700px;
+    position: absolute;
+    box-shadow:10px 10px 20px black;
+}
+.box #title
+{
+    color: aliceblue;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin:  1% 25%;
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+ label {
+    color: rgb(230, 230, 230);
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    margin-left: 20%;
+    padding: 35px 15px;
+    line-height: 25px;
+    font-weight: bolder;
+}
+#male{
+    margin-left: 6.8%;
+}
+input{
+    padding: 5px ;
+    line-height: 5px;
+    
+}
+#submit , #reset , #relode {
+    margin: 5%;
+    padding: 5px 10px;
+    position: relative;
+    left: 15%;
+    
+}
+#result{
+    color: aliceblue;
+    letter-spacing: 2px;
+    position: relative;
+    top: 5%; 
+    left: 37%;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: inline;
+
+}
+@media screen and (min-width:950px){
+      #relode {
+        margin-top: -17%;
+        padding: 5px 10px;
+        position: relative;
+        left: 15%;
+        
+    }
+    
+    
+}
+
+@media screen and (max-width:750px){
+    *{
+        overflow: hidden;
+    }
+    .box{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    label {
+       
+        font-size: 2rem;
+        margin-left: 25%;
+        padding: 15px 5px;
+        line-height: 15px;
+        width: 60%;
+    }
+    input{
+        padding: 10px 50px ;
+        margin-left: 10%;
+        width: 80%;
+
+        
+    }
+    #male{
+        margin-left:10%;
+    }
+    #m{
+        margin-top: 60px;
+    }
+    #submit , #reset , #relode {
+        position: relative;
+        width: 40%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-59% , -720%);
+        
+    }
+    .box #title
+    {
+    margin-top: 10%;
+    margin-left: 30%;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 50%;
+    line-height: 20px;
+    }
+    #result{
+       
+        position: relative;
+        top: 2%; 
+        left: 10%;
+        font-size: 2rem;
+    }
+    
+    
+}
+
